@@ -1,0 +1,98 @@
+.stats{
+    @include bloc-disposition;
+    .stats__livres-mois, .stats__pages-mois{
+        width:40%;
+        height:200px;
+        overflow: auto;
+        margin:auto;
+        margin-bottom: 100px;
+        text-align: center;
+        font-size:1.5em;
+        }
+    .stast__livres-mois--barre, .stast__pages-mois--barre{
+        height:300px;
+        vertical-align: bottom;
+        .stats__livres-mois--barre-6{
+            background: $color-third;
+        }
+        .stats__livres-mois--barre-0{
+            background: linear-gradient(to top,$color-third 0% 10%, $color-primary 10% 100%);
+        }
+    }
+    td{
+        width:3em;
+        border-radius: 20%;
+    }
+    th, h2{
+        @include stats-sous-titres;
+    }
+    .genres__stats{
+        height:300px;
+        width: 300px;
+        margin:auto;
+        border-radius: 50%;
+        background: conic-gradient(from 45deg, $color-secondary 0% 25%, $color-third 25% 41%, $color-fourth 41% 66%, $color-fifth 66% 82%, $color-sixth 82% 100%);
+
+    }
+    .genres__legend{
+        @include legend-display;
+        margin-bottom:100px;
+        .genres__legend-jeunesse{
+            @include legend;
+            background-color: $color-secondary;
+        }
+        .genres__legend-ya{
+            @include legend;
+            background-color: $color-third;
+        }
+        .genres__legend-BD{
+            @include legend;
+            background-color: $color-fourth;
+        }
+        .genres__legend-polar{
+            @include legend;
+            background-color: $color-fifth;
+        }
+        .genres__legend-roman{
+            @include legend;
+            background-color: $color-sixth;
+        }
+    }
+    .note-moyenne{
+        margin-bottom: 100px;
+        h2{
+            @include stats-sous-titres;
+        }
+        .note-moyenne__bouton{
+            @include note;
+            background: linear-gradient(to right, $color-third 0% 83%, $color-secondary 83% 100%);
+            margin:auto;
+        }
+    }
+    .proportions-fhnb{
+        margin-bottom: 100px;
+        h2{
+            @include stats-sous-titres;
+        }
+        .proportions-fhnb__bouton{
+            @include note;
+            background: linear-gradient(to right, $color-fourth 0% 42%, $color-secondary 42% 84%, $color-sixth 84% 100%);
+            margin:auto;
+        }
+        .proportions-fhnb__legend{
+            @include legend-display;
+        }
+        .proportions-fhnb__legend-femme{
+            @include legend;
+            background-color: $color-fourth;
+        }
+        .proportions-fhnb__legend-homme{
+            @include legend;
+            background-color: $color-secondary;
+        }
+        .proportions-fhnb__legend-nb{
+            @include legend;
+            background-color: $color-sixth;
+        }
+    }
+}
