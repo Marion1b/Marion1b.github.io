@@ -35,7 +35,7 @@
             background:linear-gradient(to top, $color-third 0% 55%, $color-primary 55% 100%)
         }
         .stats__pages-mois--barre-0{
-            background:linear-gradient(to top,$color-third 0% 15%, $color-primary 15% 100%)
+            background:$color-third;
         }
     }
     td{
