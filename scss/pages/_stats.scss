@@ -12,14 +12,30 @@
         text-align: center;
         font-size:1.5em;
         }
-    .stast__livres-mois--barre, .stast__pages-mois--barre{
+    .stast__livres-mois--barre{
         height:300px;
         vertical-align: bottom;
         .stats__livres-mois--barre-6{
             background: $color-third;
         }
+        .stats__livres-mois--barre-1{
+            background: linear-gradient(to top,$color-third 0% 17%, $color-primary 17% 100%);
+        }
         .stats__livres-mois--barre-0{
-            background: linear-gradient(to top,$color-third 0% 10%, $color-primary 10% 100%);
+            background: $color-primary;
+        }
+    }
+    .stast__pages-mois--barre{
+        height:300px;
+        vertical-align: bottom;
+        .stats__pages-mois--barre-1578{
+            background: $color-third;
+        }
+        .stats__pages-mois--barre-864{
+            background:linear-gradient(to top, $color-third 0% 55%, $color-primary 55% 100%)
+        }
+        .stats__pages-mois--barre-0{
+            background:linear-gradient(to top,$color-third 0% 15%, $color-primary 15% 100%)
         }
     }
     td{
@@ -34,7 +50,7 @@
         width: 300px;
         margin:auto;
         border-radius: 50%;
-        background: conic-gradient(from 45deg, $color-secondary 0% 25%, $color-third 25% 41%, $color-fourth 41% 66%, $color-fifth 66% 82%, $color-sixth 82% 100%);
+        background: conic-gradient(from 45deg, $color-secondary 0% 25%, $color-third 25% 38%, $color-fourth 38% 63%, $color-fifth 63% 75%, $color-sixth 75% 100%);
 
     }
     .genres__legend{
@@ -68,7 +84,7 @@
         }
         .note-moyenne__bouton{
             @include note;
-            background: linear-gradient(to right, $color-third 0% 83%, $color-secondary 83% 100%);
+            background: linear-gradient(to right, $color-third 0% 80%, $color-secondary 80% 100%);
             margin:auto;
         }
     }
@@ -79,7 +95,7 @@
         }
         .proportions-fhnb__bouton{
             @include note;
-            background: linear-gradient(to right, $color-fourth 0% 42%, $color-secondary 42% 84%, $color-sixth 84% 100%);
+            background: linear-gradient(to right, $color-fourth 0% 50%, $color-secondary 50% 88%, $color-sixth 88% 100%);
             margin:auto;
         }
         .proportions-fhnb__legend{

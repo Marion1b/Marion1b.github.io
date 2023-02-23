@@ -52,7 +52,7 @@
         }
     }
     // 3,5/5
-    #le-signal{
+    #le-signal, #notre-part-de-nuit{
         .note{
             @include note;
             background: linear-gradient(to right, $color-third 0% 70%, $color-secondary 70% 100%);
