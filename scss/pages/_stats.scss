@@ -1,3 +1,6 @@
+.stats::-webkit-scrollbar {
+    display: none;
+    }
 .stats{
     @include bloc-disposition;
     .stats__livres-mois, .stats__pages-mois{

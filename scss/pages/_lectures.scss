@@ -1,3 +1,6 @@
+.lectures::-webkit-scrollbar {
+    display: none;
+    }
 .lectures{
     @include bloc-disposition;
     .lectures__visual{
@@ -67,6 +70,13 @@
         .note{
             @include note;
             background: linear-gradient(to right, $color-third 0% 90%, $color-secondary 90% 100%);
+        }
+    }
+    // 5/5
+    #bergeres-guerrieres4{
+        .note{
+            @include note;
+            background: $color-third;
         }
     }
 }
