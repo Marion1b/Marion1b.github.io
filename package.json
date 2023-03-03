@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Joe Blow's portfolio",
   "main": "index.js",
-  "scripts": { "sass":"sass --watch ./scss/Mybooks.scss:./css/Mybooks.css --style compressed" 
+  "scripts": { "sass":"sass --watch ./scss/Style.scss:./css/Style.css --style compressed" 
   },
   "repository": {
     "type": "git",

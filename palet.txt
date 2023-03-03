@@ -1,0 +1,5 @@
+violet : #8A97FE
+rose : #FE81CC
+jaune : #F6FE78
+blanc: #FAFAFA
+rouge : #FE4B4B
