@@ -4,6 +4,9 @@ $color-secondary: #FE81CC;
 $color-third:#F6FE78;
 $color-fourth:#FE4B4B;
 
+$p-font-size:1.3rem;
+$h2-font-size:1.5rem;
+
 @mixin box{
     height: 300px;
     width: 27%;
@@ -49,6 +52,12 @@ $color-fourth:#FE4B4B;
         &:active{
             color:$color-third;
         }
+}
+
+@mixin text{
+    text-align: justify;
+    font-size:$p-font-size;
+    line-height: 1.5rem;
 }
 
 *{
@@ -168,6 +177,7 @@ header{
     }
     &__sites{
         @include box;
+        background-image: url('../Pictures/sites.png')
     }
     &__sites--hover-transparent{
         @include box-transparent;
@@ -182,13 +192,11 @@ header{
 }
 .a-propos{
     h2{
-        font-size: 1.5rem;
+        font-size: $h2-font-size;
     }
     p{
-        text-align: justify;
+        @include text;
         margin-bottom: 75px;
-        font-size:1.3rem;
-        line-height: 1.5rem;
     }
     a{
         @include a--hover;
@@ -201,6 +209,18 @@ header{
         display: block;
         margin:auto;
         margin-bottom: 150px;
+    }
+}
+.sites{
+    p{
+        @include text;
+    }
+    h2{
+        font-size:$h2-font-size;
+    }
+    img{
+        width: 50%;
+        height: 50%;
     }
 }
 footer{
