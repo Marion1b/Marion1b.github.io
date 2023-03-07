@@ -41,6 +41,16 @@ $color-fourth:#FE4B4B;
     }
 }
 
+@mixin a--hover{
+    transition:color 200ms;
+        &:hover{
+            color:$color-secondary;
+        }
+        &:active{
+            color:$color-third;
+        }
+}
+
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
     scrollbar-width:none;
@@ -78,6 +88,12 @@ header{
             transform:scale(1.3);
             color:$color-secondary;
         }
+        a{
+            transition:color 1200ms;
+            &:hover{
+                color:$color-secondary;
+            }
+        }
     }
     ul{
         display: flex;
@@ -101,13 +117,23 @@ header{
 .separation{
     &__line{
         margin-top: 25px;
-        margin-bottom: 75px;
+        margin-bottom: 150px;
         border-top: 2px solid $color-third;
         height: 2px;
     }
 }
+.bonjour{
+    p{
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    &__Marion{
+        color:$color-third;
+    }
+}
 .accueil{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: space-around;
     &__a-propos{
@@ -165,12 +191,45 @@ header{
         line-height: 1.5rem;
     }
     a{
-        transition:color 200ms;
-        &:hover{
-            color:$color-secondary;
+        @include a--hover;
+    }
+}
+.CV{
+    img{
+        height: 90%;
+        width: 90%;
+        display: block;
+        margin:auto;
+        margin-bottom: 150px;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 150px;
+    margin-bottom: 25px;
+    .footer__reseaux{
+        display: flex;
+        img{
+            width: 25px;
+            height: 25px;
+            transition:transform 400ms;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
-        &:active{
-            color:$color-third;
+        &--linkedin, &--git{
+            padding-left: 20px;
         }
+    }
+    a{
+        font-size: 1.3em;
+    }
+    .footer__mail{
+        transition:transform 400ms;
+            &:hover{
+                transform: scale(1.1);
+            }
     }
 }
