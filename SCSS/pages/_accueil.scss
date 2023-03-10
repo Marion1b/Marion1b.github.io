@@ -1,0 +1,59 @@
+.bonjour{
+    p{
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    &__Marion{
+        color:$color-third;
+    }
+}
+.accueil{
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-around;
+    &__a-propos{
+        @include box;
+        background-image: url('../Pictures/a-propos.png');
+    }
+    &__a-propos--hover-transparent{
+        @include box-transparent;
+        &:hover + .accueil__a-propos--description{
+            background-color: $color-secondary;
+            color:$color-third;
+        }
+    }
+    &__a-propos--description{
+        @include box-description;
+    }
+    &__CV{
+        @include box;
+        background-image: url('../CV/CV_Barthoux.png');
+        background-size: 100%;
+        background-position: top;
+    }
+    &__CV--hover-transparent{
+        @include box-transparent;
+        &:hover + .accueil__CV--description{
+            background-color: $color-secondary;
+            color:$color-third;
+        }
+    }
+    &__CV--description{
+        @include box-description;
+    }
+    &__sites{
+        @include box;
+        background-image: url('../Pictures/sites.png')
+    }
+    &__sites--hover-transparent{
+        @include box-transparent;
+        &:hover + .accueil__sites--description{
+            background-color: $color-secondary;
+            color:$color-third;
+        }
+    }
+    &__sites--description{
+        @include box-description;
+    }
+}

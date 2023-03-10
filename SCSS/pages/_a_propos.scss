@@ -1,0 +1,12 @@
+.a-propos{
+    h2{
+        font-size: $h2-font-size;
+    }
+    p{
+        @include text;
+        margin-bottom: 75px;
+    }
+    a{
+        @include a--hover;
+    }
+}

@@ -1,0 +1,13 @@
+.sites{
+    p{
+        @include text;
+        margin-bottom:100px;
+    }
+    h2{
+        font-size:$h2-font-size;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+}

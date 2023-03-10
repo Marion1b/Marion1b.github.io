@@ -1,0 +1,52 @@
+@mixin box{
+    height: 300px;
+    width: 27%;
+    border: 3px $color-third solid;
+    background-color: $color-third;
+    background-position: top-left;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition:transform 500ms, border-color 400ms;
+    &:hover{
+        transform: scale(1.1);
+        border-color: $color-secondary;
+    }
+}
+
+@mixin box-transparent{
+    background-color: transparent;
+    height: 85%;
+    width: 100%;
+}
+
+@mixin box-description{
+    padding:5px 0px 5px 0px;
+    text-align: center;
+    font-size:2rem;
+    color: $color-background;
+    background-color: $color-third;
+    opacity: 0.75;
+    transition: all 400ms;
+    &:hover{
+        background-color: $color-secondary;
+        color:$color-third;
+    }
+}
+
+@mixin a--hover{
+    transition:color 200ms;
+        &:hover{
+            color:$color-secondary;
+        }
+        &:active{
+            color:$color-third;
+        }
+}
+
+@mixin text{
+    text-align: justify;
+    font-size:$p-font-size;
+    line-height: 1.5rem;
+}
