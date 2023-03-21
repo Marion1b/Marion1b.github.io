@@ -21,6 +21,9 @@
         .stats__livres-mois--barre-1{
             background: linear-gradient(to top,$color-third 0% 17%, $color-primary 17% 100%);
         }
+        .stats__livres-mois--barre-2{
+            background: linear-gradient(to top,$color-third 0% 34%, $color-primary 34% 100%);
+        }
         .stats__livres-mois--barre-0{
             background: $color-primary;
         }
@@ -33,6 +36,9 @@
         }
         .stats__pages-mois--barre-864{
             background:linear-gradient(to top, $color-third 0% 55%, $color-primary 55% 100%)
+        }
+        .stats__pages-mois--barre-515{
+            background:linear-gradient(to top, $color-third 0% 33%, $color-primary 33% 100%)
         }
         .stats__pages-mois--barre-0{
             background:$color-primary;
@@ -50,7 +56,7 @@
         width: 300px;
         margin:auto;
         border-radius: 50%;
-        background: conic-gradient(from 45deg, $color-secondary 0% 25%, $color-third 25% 38%, $color-fourth 38% 63%, $color-fifth 63% 75%, $color-sixth 75% 100%);
+        background: conic-gradient(from 45deg, $color-secondary 0% 22%, $color-third 22% 33%, $color-fourth 33% 55%, $color-fifth 55% 77%, $color-sixth 77% 100%);
 
     }
     .genres__legend{
