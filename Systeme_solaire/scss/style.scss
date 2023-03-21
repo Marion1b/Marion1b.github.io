@@ -1,0 +1,287 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+
+
+*{
+    background-color: $background-color;
+    scroll-behavior: smooth;
+}
+body{
+    width: 95%;
+    margin:auto;
+}
+
+p{
+    color:$color-primary;
+    font-size: 1.5rem;
+}
+
+header{
+    padding-top: 25px;
+    margin-bottom:150px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        text-align: center;
+        color:$color-secondary;
+        font-size:5rem;
+        transition:all 1000ms;
+        &:hover{
+            color:$color-secondary;
+            transform: scale(1.3);
+        }
+    }
+}
+
+.systeme-solaire{
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        border-radius: 100%;
+    }
+    &__soleil{
+        .system-solaire__soleil-img{
+            @include box-planetes;
+            img{
+                height: 300px;
+                transition:transform 500ms;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            &:hover + .systeme-solaire__soleil-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__soleil-nom{
+            @include noms-planetes;
+        }
+    }
+    &__mercure{
+        .systeme-solaire__mercure-img{
+            @include box-planetes;
+            img{
+                height:25px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__mercure-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__mercure-nom{
+            width: 27px;
+            @include noms-planetes;
+        }
+    }
+    &__venus{
+        .systeme-solaire__venus-img{
+            @include box-planetes;
+            img{
+                height:62px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__venus-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__venus-nom{
+            width: 67px;
+            @include noms-planetes;
+        }  
+    }
+    &__terre{
+        .systeme-solaire__terre-img{
+            @include box-planetes;
+            img{
+                height:65px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__terre-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__terre-nom{
+            width: 70px;
+            @include noms-planetes;
+        }
+    }
+    &__mars{
+        .systeme-solaire__mars-img{
+            @include box-planetes;
+            img{
+                height:34px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__mars-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__mars-nom{
+            width: 35px;
+            @include noms-planetes;
+        }
+    }
+    &__jupiter{
+        .systeme-solaire__jupiter-img{
+            @include box-planetes;
+            img{
+                height:250px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__jupiter-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__jupiter-nom{
+            width: 272px;
+            @include noms-planetes;
+            text-align: center;
+        }
+    }
+    &__saturne{
+        .systeme-solaire__saturne-img{
+            @include box-planetes;
+            img{
+                height:208px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__saturne-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__saturne-nom{
+            width: 520px;
+            @include noms-planetes;
+            text-align: center;
+        }
+    }
+    &__uranus{
+        .systeme-solaire__uranus-img{
+            @include box-planetes;
+            img{
+                width:98px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__uranus-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__uranus-nom{
+            width: 98px;
+            @include noms-planetes;
+            text-align: center;
+        }
+    }
+    &__neptune{
+        .systeme-solaire__neptune-img{
+            @include box-planetes;
+            img{
+                height:88px;
+                @include hover-planetes;
+            }
+            &:hover + .systeme-solaire__neptune-nom{
+                transform: scale(1);
+            }
+        }
+        .systeme-solaire__neptune-nom{
+            width: 95px;
+            @include noms-planetes;
+            text-align: center;
+        }
+    }
+}
+.attention{
+    margin-bottom: 100px;
+}
+.nature{
+    border-radius: 100%;
+    width: 30px;
+    height:30px;
+    border:2px solid $color-primary;
+}
+.soleil{
+    @include description-planetes;
+}
+
+.mercure{
+    @include description-planetes;
+    &__img{
+        order:2;
+    }
+    &__infos{
+        order:1;
+    }
+}
+.venus{
+    @include description-planetes;
+}
+.terre{
+    @include description-planetes;
+    &__img{
+        order:2;
+    }
+    &__infos{
+        order:1;
+    }
+}
+.mars{
+    @include description-planetes;
+}
+.jupiter{
+    @include description-planetes;
+    &__img{
+        order:2;
+    }
+    &__infos{
+        order:1;
+    }
+}
+.saturne{
+    @include description-planetes;
+    &__img{
+        img{
+            height: 200px;
+            margin-top: 10px;
+        }
+    }
+}
+.uranus{
+    @include description-planetes;
+    &__img{
+        display:flex;
+        order:2;
+        img{
+            height: 450px;
+        }
+    }
+    &__infos{
+        order:1;
+    }
+}
+.neptune{
+    @include description-planetes;
+}
+footer{
+    h2{
+        color:$color-secondary;
+        text-align: right;
+    }
+    a{
+        color:$color-primary;
+        text-decoration: none;
+        &:hover{
+            color:$color-secondary;
+        }
+    }
+    ul{
+        padding-left: 0px;
+        text-align: right;
+    }
+    li{
+        list-style-type: none;
+    }
+}
