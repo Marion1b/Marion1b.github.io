@@ -17,21 +17,22 @@
 
 @mixin box-transparent{
     background-color: transparent;
-    height: 85%;
+    height: 73%;
     width: 100%;
 }
 
 @mixin box-description{
-    padding:5px 0px 5px 0px;
-    text-align: center;
-    font-size:2rem;
-    color: $color-background;
     background-color: $color-third;
     opacity: 0.75;
     transition: all 400ms;
     &:hover{
         background-color: $color-secondary;
         color:$color-third;
+    }
+    p{
+        text-align: center;
+        font-size:2rem;
+        color: $color-background;
     }
 }
 

@@ -5,6 +5,7 @@
     p{
         @include text;
         margin-bottom: 75px;
+        line-height:1.5;
     }
     a{
         @include a--hover;

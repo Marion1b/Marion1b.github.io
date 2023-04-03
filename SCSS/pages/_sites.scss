@@ -2,6 +2,7 @@
     p{
         @include text;
         margin-bottom:100px;
+        line-height:1.5;
     }
     h2{
         font-size:$h2-font-size;

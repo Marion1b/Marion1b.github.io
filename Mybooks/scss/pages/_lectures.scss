@@ -67,7 +67,7 @@
         }
     }
     // 4/5
-    #la-petite-communiste, #bergeres-guerrieres1, #maitre-des-illusions{
+    #la-petite-communiste, #bergeres-guerrieres1, #maitre-des-illusions, #fantaisies-guerilleres{
         .note{
             @include note;
             background: linear-gradient(to right, $color-third 0% 80%, $color-secondary 80% 100%);
@@ -81,7 +81,7 @@
         }
     }
     // 5/5
-    #bergeres-guerrieres4{
+    #bergeres-guerrieres4, #les-nuits-bleues{
         .note{
             @include note;
             background: $color-third;

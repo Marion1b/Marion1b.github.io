@@ -3,14 +3,14 @@
 }
 h1{
     color:$color-third;
-    font-family:  'Exo 2',Georgia, 'Times New Roman', Times, sans-serif;
+    font-family:  'Roboto Slab',serif;
 }
 h2{
     color:$color-third;
-    font-family:  'Hind Siliguri',Georgia, 'Times New Roman', Times, sans-serif;
+    font-family:  'Poppins',Georgia, 'Times New Roman', Times, sans-serif;
 }
 li{
-    font-family:  'Exo 2',Georgia, 'Times New Roman', Times, sans-serif;
+    font-family:  'Roboto Slab',serif;
     font-weight: bold;
 }
 a{
@@ -19,7 +19,10 @@ a{
 }
 p{
     color:$color-font;
-    font-family:  'Hind Siliguri',Georgia, 'Times New Roman', Times, sans-serif;
+    font-family:  'Poppins',Georgia, 'Times New Roman', Times, sans-serif;
+}
+.bold{
+    font-weight: bold;;
 }
 *::-webkit-scrollbar {
     display: none;
