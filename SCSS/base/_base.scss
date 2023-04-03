@@ -1,12 +1,17 @@
 *{
-    font-family:  Georgia, 'Times New Roman', Times, serif;
     scrollbar-width:none;
 }
 h1{
     color:$color-third;
+    font-family:  'Exo 2',Georgia, 'Times New Roman', Times, serif;
 }
 h2{
     color:$color-third;
+    font-family:  'Hind Siliguri',Georgia, 'Times New Roman', Times, serif;
+}
+li{
+    font-family:  'Exo 2',Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 a{
     color:$color-third;
@@ -14,6 +19,7 @@ a{
 }
 p{
     color:$color-font;
+    font-family:  'Hind Siliguri',Georgia, 'Times New Roman', Times, serif;
 }
 *::-webkit-scrollbar {
     display: none;
@@ -49,10 +55,8 @@ header{
             list-style-type: none;
             margin-left: 30px;
             padding:10px;
-            border-radius: 2rem;
             font-size:1.5rem;
             transition:transform 400ms;
-            border: 2px $color-third solid;
             &:hover{
                 transform: scale(1.15);
                 transform: translateY(3px);
