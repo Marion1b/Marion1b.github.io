@@ -1,6 +1,7 @@
 $title-color:black;
 $highlight-color:#8C230B;
 $complementary-color:#D99036;
+$light-color:white;
 
 @mixin button{
     height: 85px;
@@ -15,38 +16,37 @@ $complementary-color:#D99036;
         transform: scale(1.05);
     }
     h1{
-        color: $complementary-color;
+        color: $light-color;
     }
 }
 
 body{
     width:90%;
     margin:auto;
-
 }
 h1{
-    font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", Georgia, 'Times New Roman', Times, sans-serif;
     font-weight: bold;
     font-size: 32px;
     color: $title-color;
     margin:0%;
 }
 h2{
-    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     font-weight:bold;
     font-size: 32px;
     color:$title-color;
     margin:0%;
 }
 .h2-highlight{
-    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     font-size: 32px;
     font-weight: bold;
     color: $highlight-color;
     margin:0%;
 }
 .header__font{
-    font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", Georgia, 'Times New Roman', Times, sans-serif;
     font-weight: bold;
     font-size:72px;
     color:$title-color;
@@ -54,14 +54,13 @@ h2{
     margin-bottom: 50px;
 }
 .body-highlight{
-    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: $highlight-color;
     margin:0%;
 }
 p{
-    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     font-size: 24px;
     color: $title-color;
     margin:0%;
@@ -117,5 +116,20 @@ header{
     }
     .button{
         @include button;
+    }
+}
+.nos-restaurants{
+    margin-bottom: 150px;
+    h1{
+        text-align: center;
+        margin-bottom: 75px;
+    }
+    img{
+        width: 305px;
+        height: 216px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
     }
 }
