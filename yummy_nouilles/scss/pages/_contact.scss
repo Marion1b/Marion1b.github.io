@@ -1,0 +1,13 @@
+.restos{
+    @include section;
+    &__container{
+        display: flex;
+        justify-content: space-around;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+}

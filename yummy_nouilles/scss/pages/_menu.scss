@@ -1,0 +1,26 @@
+nav{
+    margin-bottom: 150px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    border:15px solid $highlight-color;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    img{
+        width:150px;
+        margin-bottom: 75px;
+    }
+    &__h1-underline{
+        border-bottom: 3px solid $highlight-color;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    h2{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,18 @@
+footer{
+    background-color: $title-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:60px;
+    p{
+        color:$light-color;
+    }
+    img{
+        height:75px;
+    }
+    .footer-legal{
+        p{
+            text-align: right;
+        }
+    }
+}

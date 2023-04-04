@@ -1,0 +1,19 @@
+.click{
+    height:300px;
+    background-color: $complementary-color;
+    border: 8px solid $title-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:150px;
+    .button{
+        a{
+            @include button;
+            background-color: $title-color;
+            h1{
+                color:$complementary-color;
+            }
+        }
+    }
+}

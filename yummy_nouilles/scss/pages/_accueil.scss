@@ -1,0 +1,58 @@
+header{
+    height: 759px;
+    background-image: url(../Images/header/ramen-gc4774e9f0_1920.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .header__text{
+        height:320px;
+        width: 650px;
+        background: rgba(255, 255, 255, 0.5);
+        padding-left:10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button{
+        a{
+            @include button;
+        }
+    }
+}
+.nos-restaurants{
+    @include section;
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 305px;
+        height: 216px;
+    }
+}
+.savoir-faire{
+    @include section;
+    text-align:justify;
+}
+.insta{
+    @include section;
+    &__container{
+        width: 90%;
+        height:auto;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 260px);
+        justify-content: center;
+        grid-gap:15px;
+    }
+}
+.contact{
+    @include section;
+    text-align: center;
+}
