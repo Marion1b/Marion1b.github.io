@@ -1,11 +1,12 @@
 footer{
-    background-color: $title-color;
+    border-top:3px $title-color solid;
+    background-color: $light-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:60px;
     p{
-        color:$light-color;
+        color:$title-color;
     }
     img{
         height:75px;

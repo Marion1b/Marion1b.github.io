@@ -56,10 +56,36 @@
     }
     &__total{
         display: flex;
-        justify-content: center;
+        justify-content:center;
         align-items: baseline;
         h1{
-            margin-right: 20px;
+            margin-right: 50px;
         }
+        h2{
+            margin-left:50px
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        input{
+            font-family: "Poppins", Georgia, 'Times New Roman', Times, sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+            color: $title-color;
+            padding:10px 45px;
+            background-color: $complementary-color;
+            cursor: pointer;
+        }
+    }
+    &__indispo{
+        text-decoration: line-through;
+        text-decoration-thickness: 3px;
+    }
+    .click-collect__indispo-cursor{
+        input{
+            cursor: not-allowed;
+        }  
     }
 }
