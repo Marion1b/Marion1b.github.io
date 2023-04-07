@@ -1,52 +1,69 @@
-body{
-    width:90%;
-    margin:auto;
+@media screen and (min-width:1000px){
+    body{
+        width:90%;
+        margin:auto;
+    }
+}
+@media screen and (max-width:1000px){
+    body{
+        width:95%;
+        margin:auto;
+    }
+}
+@media screen and (min-width:1000px){
+    h1, h2{
+        font-size:32px;
+    }
+    .header__font{
+        font-size:72px;
+        margin-bottom: 50px;
+    }
+    .body-highlight, .body-highlight-color, p{
+        font-size:24px;
+    }
+}
+@media screen and (max-width:1000px){
+    h1, h2{
+        font-size:24px;
+    }
+    .header__font{
+        font-size:40px;
+        margin-bottom: 30px;
+    }
+    .body-highlight, .body-highlight-color, p{
+        font-size:16px;
+    }
 }
 h1{
     font-family: "Poppins", Georgia, 'Times New Roman', Times, sans-serif;
     font-weight: bold;
-    font-size: 32px;
     color: $title-color;
     margin:0%;
 }
 h2{
     font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     font-weight:bold;
-    font-size: 32px;
     color:$title-color;
-    margin:0%;
-}
-.h2-highlight{
-    font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: $title-color;
     margin:0%;
 }
 .header__font{
     font-family: "Poppins", Georgia, 'Times New Roman', Times, sans-serif;
     font-weight: bold;
-    font-size:72px;
     color:$title-color;
-    margin:0%;
-    margin-bottom: 50px;
 }
 .body-highlight{
     font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    font-size: 24px;
     font-weight: bold;
     margin:0%;
 }
 .body-highlight-color{
     font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     color:$highlight-color;
-    font-size: 24px;
     font-weight: bold;
     margin:0%;
 }
 p{
     font-family: "Chivo", Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    font-size: 24px;
     color: $title-color;
     margin:0%;
 }

@@ -1,26 +1,51 @@
 header{
-    height: 759px;
     background-image: url(../Images/header/ramen-gc4774e9f0_1920.jpg);
     background-size: cover;
     background-attachment: scroll;
-    margin-top: 150px;
-    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .header__text{
-        height:320px;
-        width: 650px;
-        background: rgba(255, 255, 255, 0.5);
-        padding-left:10px;
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
     .button{
         a{
             @include button;
+        }
+    }
+}
+@media screen and (min-width:1000px){
+    header{
+        height: 759px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        .header__text{
+            height:320px;
+            width: 650px;
+            background: rgba(255, 255, 255, 0.5);
+            padding-left:10px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:1000px){
+    header{
+        height: 735px;
+        background-size:100%;
+        background-repeat:no-repeat;
+        margin-bottom: 0px;
+        .header__text{
+            height:400px;
+            width: 100%;
+            padding-left:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            h2{
+                margin-bottom: 20px;
+                text-align: center;
+            }
         }
     }
 }
@@ -34,6 +59,12 @@ header{
     img{
         width: 305px;
         height: 216px;
+    }
+}
+@media screen and (max-width:1000px){
+    p{
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 }
 .savoir-faire{
