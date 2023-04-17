@@ -1,13 +1,42 @@
 .restos{
     @include section;
-    &__container{
-        display: flex;
-        justify-content: space-around;
-    }
     h2{
         margin-bottom: 20px;
     }
     p{
         margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1000px) {
+        img{
+            width: auto;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    @media screen and (max-width: 999px) {
+        &__plan{
+            img{
+                width: 100%;
+                max-width: 500px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__adresses{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            &-detail{
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+            }
+        }
     }
 }

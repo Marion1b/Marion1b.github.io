@@ -1,10 +1,4 @@
 header{
-    background-image: url(../Images/header/ramen-gc4774e9f0_1920.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     .button{
         a{
             @include button;
@@ -13,9 +7,18 @@ header{
 }
 @media screen and (min-width:1000px){
     header{
-        height: 759px;
+        background-image: url(../Images/header/ramen-gc4774e9f0_1920.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        height: 1000px;
         margin-top: 150px;
         margin-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            visibility:collapse;
+        }
         .header__text{
             height:320px;
             width: 650px;
@@ -28,40 +31,50 @@ header{
         }
     }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:999px){
     header{
-        height: 735px;
-        background-size:100%;
-        background-repeat:no-repeat;
         margin-bottom: 0px;
         .header__text{
-            height:400px;
             width: 100%;
-            padding-left:10px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
             h2{
                 margin-bottom: 20px;
                 text-align: center;
+            }
+            img{
+                width:100%;
+                margin-top: 100px;
             }
         }
     }
 }
 .nos-restaurants{
     @include section;
-    &__container{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    margin-top: 150px;
+    @media screen and (min-width:1100px){
+        &__container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+    @media screen and (max-width:1099px){
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     img{
         width: 305px;
         height: 216px;
     }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:999px){
     p{
         margin-top: 10px;
         margin-bottom: 30px;
