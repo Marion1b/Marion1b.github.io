@@ -74,7 +74,7 @@
         }
     }
     // 4,5/5
-    #solitaire, #bergeres-guerrieres2, #bergeres-guerrieres3{
+    #solitaire, #bergeres-guerrieres2, #bergeres-guerrieres3, #l-espace-d-un-an{
         .note{
             @include note;
             background: linear-gradient(to right, $color-third 0% 90%, $color-secondary 90% 100%);

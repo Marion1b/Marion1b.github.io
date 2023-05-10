@@ -56,6 +56,9 @@
         .stats__pages-mois--barre-1035{
             background:linear-gradient(to top, $color-third 0% 65%, $color-primary 65% 100%)
         }
+        .stats__pages-mois--barre-590{
+            background: linear-gradient(to top, $color-third 0% 37%, $color-primary 37% 100%);
+        }
         .stats__pages-mois--barre-0{
             background:$color-primary;
         }
@@ -72,7 +75,7 @@
         width: 300px;
         margin:auto;
         border-radius: 50%;
-        background: conic-gradient(from 45deg, $color-secondary 0% 18%, $color-third 18% 27%, $color-fourth 27% 45%, $color-fifth 45% 63%, $color-sixth 63% 100%);
+        background: conic-gradient(from 45deg, $color-secondary 0% 17%, $color-third 17% 25%, $color-fourth 25% 42%, $color-fifth 42% 59%, $color-sixth 59% 92%, $color-seventh 92% 100%);
 
     }
     .genres__legend{
@@ -97,6 +100,10 @@
         .genres__legend-roman{
             @include legend;
             background-color: $color-sixth;
+        }
+        .genres__legend-SF{
+            @include legend;
+            background-color: $color-seventh;
         }
     }
     .note-moyenne{
