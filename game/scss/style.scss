@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+$text-color:#FE00A5;
+$label-color:#58BFEC;
+
+@keyframes rotating {
+    from {
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*{
+    margin:0px;
+}
+body{
+    background-image: url("../pics/background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Chakra Petch', sans-serif;
+}
+h1{
+    color: $text-color;
+}
+label{
+    color: $label-color;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.animation{
+    background: linear-gradient(
+    to left,
+    $text-color 25%,
+    rgba(255, 255, 255, 0) 25% 75%,
+    $text-color 75%
+  );
+    padding: 5px;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    border-radius: 20px;
+    animation: rotating 5s linear infinite;
+    z-index:1;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index:2;
+    h1{
+        padding-top: 0px;
+        padding-bottom: 45px;
+        align-self: center;
+        font-size: 3rem;
+    }
+    &_infos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blank{
+        width: 30%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    label{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 1.2rem;
+    }
+    &_input{
+        background: none;
+        border: none;
+        border-bottom: $label-color solid 1px;
+        margin-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: $label-color;
+        transition: border 400ms;
+        &:focus{
+            border-bottom: $label-color solid 3px;
+        }
+    }
+    &_button{
+        margin-top:30px;
+        background: none;
+        border:none;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+        color:$text-color;
+        align-self: center;
+        cursor: pointer;
+        transition: all 400ms;
+        &:hover{
+            transform: translate(5px, -5px);
+
+        }
+    }
+}

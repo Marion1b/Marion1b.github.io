@@ -1,0 +1,77 @@
+.section__filtre{
+    margin-top: 150px;
+    background-color: $primary-color;
+    padding: 30px 0px;
+    p{
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom:30px;
+        color:$font-color-light;
+        font-weight: bold;
+    }
+    ul{
+        list-style-type:none;
+        display: flex;
+        justify-content: space-around;
+        li{
+            font-size: 1.5rem;
+            .underline{
+                text-decoration: underline;
+            }
+            a{
+                text-decoration: none;
+                color:$font-color-light;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.section__catalogue{
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size:0.80rem;
+    }
+}
+.section__livres{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:150px;
+    padding-bottom:50px;
+    &__container{
+        a{
+            color:$font-color;
+            text-decoration: none;
+            &:hover{
+                color:$primary-color;
+            }
+        }
+    }
+    img{
+        height: 500px;
+        padding-bottom:10px;
+        margin-top:50px;
+        border:$font-color 2px solid;
+    }
+}
+
+.fiche_livre-Andersen1{
+    margin-top: 150px;
+    &-infos{
+        display: flex;
+        justify-content: center;
+        img{
+            border: black solid 2px;
+            width: 50%;
+        }
+    }
+    h1{
+        color: $font-color;
+    }
+}

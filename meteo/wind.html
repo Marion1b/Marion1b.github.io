@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Wind</title>
+</head>
+<body>
+    <header>
+        <h1>Météo Rennes</h1>
+        <nav>
+            <ul>
+                <a href=#aujourdhui><li>Aujourd'hui</li></a>
+                <a href=#demain><li>Demain</li></a>
+                <a href=#3jours><li>Dans 3 jours</li></a>
+                <a href=#4jours><li>Dans 4 jours</li></a>
+                <a href=#5jours><li>Dans 5 jours</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="meteo" id="aujourdhui">
+        <div class="meteo_bg">
+            <h2>Aujourd'hui</h2>
+            <div class="meteo_container">
+                <div class="meteo_container-header">
+                    <div class="meteo_container-header-top">
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <h3>30°</h3>
+                    </div>
+                    <div class="meteo_container-header-infos">
+                        <p>Précipations : 0%</p>
+                        <p>Humidité : 34%</p>
+                        <p>Vent : 23 km/h</p>
+                    </div>
+                </div>
+                <div class="meteo_container-content">
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">06:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">07:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">08:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">09:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>17°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">10:00</p>
+                        <img src="./pics/nuage_soleil.png" alt="nuage soleil" />
+                        <p>19°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">11:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>21°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">12:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>24°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">13:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>27°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">14:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>30°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">15:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>30°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">16:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>30°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">17:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>30°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">18:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>30°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">19:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>28°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">20:00</p>
+                        <img src="./pics/soleil.png" alt="soleil" />
+                        <p>24°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">21:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>20°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">22:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>18°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">23:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">00:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>15°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="meteo2" id="demain">
+        <div class="meteo2_bg">
+            <h2>Demain</h2>
+            <div class="meteo2_container">
+                <div class="meteo2_container-header">
+                    <div class="meteo2_container-header-top">
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <h3>17°</h3>
+                    </div>
+                    <div class="meteo2_container-header-infos">
+                        <p>Précipations : 80%</p>
+                        <p>Humidité : 80%</p>
+                        <p>Vent : 23 km/h</p>
+                    </div>
+                </div>
+                <div class="meteo2_container-content">
+                    <div class="meteo_container-content-detail">
+                        <p class="heure">06:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">07:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">08:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">09:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>17°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">10:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>17°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">11:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>17°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">12:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>18°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">13:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>18°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">14:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>18°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">15:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>18°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">16:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>18°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">17:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>17°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">18:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>17°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">19:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">20:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">21:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">22:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>14°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">23:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>13°</p>
+                    </div>
+                    <div class="meteo2_container-content-detail">
+                        <p class="heure">00:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>12°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="meteo3" id="3jours">
+        <div class="meteo3_bg">
+            <h2>Dans trois jours</h2>
+            <div class="meteo3_container">
+                <div class="meteo3_container-header">
+                    <div class="meteo3_container-header-top">
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <h3>15°</h3>
+                    </div>
+                    <div class="meteo3_container-header-infos">
+                        <p>Précipations : 100%</p>
+                        <p>Humidité : 100%</p>
+                        <p>Vent : 50 km/h</p>
+                    </div>
+                </div>
+                <div class="meteo3_container-content">
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">06:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">07:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">08:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">09:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">10:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">11:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">12:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">13:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">14:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">15:00</p>
+                        <img src="./pics/pluie.png" alt="pluie" />
+                        <p>16°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">16:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>15°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">17:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>13°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">18:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>11°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">19:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>11°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">20:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>11°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">21:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>9°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">22:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>8°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">23:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>7°</p>
+                    </div>
+                    <div class="meteo3_container-content-detail">
+                        <p class="heure">00:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>6°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="meteo4" id="4jours">
+        <div class="meteo4_bg">
+            <h2>Dans quatre jours</h2>
+            <div class="meteo4_container">
+                <div class="meteo4_container-header">
+                    <div class="meteo4_container-header-top">
+                        <img src="./pics/neige.png" alt="neige" />
+                        <h3>0°</h3>
+                    </div>
+                    <div class="meteo4_container-header-infos">
+                        <p>Précipations : 100%</p>
+                        <p>Humidité : 100%</p>
+                        <p>Vent : 23 km/h</p>
+                    </div>
+                </div>
+                <div class="meteo4_container-content">
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">06:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">07:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">08:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">09:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">10:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>1°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">11:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">12:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">13:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">14:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">15:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">16:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">17:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">18:00</p>
+                        <img src="./pics/neige.png" alt="neige" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">19:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>-1°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">20:00</p>
+                        <img src="./pics/tonnerre.png" alt="tonnerre" />
+                        <p>-2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">21:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">22:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-2°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">23:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-3°</p>
+                    </div>
+                    <div class="meteo4_container-content-detail">
+                        <p class="heure">00:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-4°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="meteo5" id="5jours">
+        <div class="meteo5_bg">
+            <h2>Dans cinq jours</h2>
+            <div class="meteo5_container">
+                <div class="meteo5_container-header">
+                    <div class="meteo5_container-header-top">
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <h3>3°</h3>
+                    </div>
+                    <div class="meteo5_container-header-infos">
+                        <p>Précipations : 0%</p>
+                        <p>Humidité : 0%</p>
+                        <p>Vent : 45 km/h</p>
+                    </div>
+                </div>
+                <div class="meteo5_container-content">
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">06:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>-4°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">07:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>-3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">08:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>-3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">09:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>-2°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">10:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>-1°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">11:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">12:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">13:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">14:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">15:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">16:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">17:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">18:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>2°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">19:00</p>
+                        <img src="./pics/nuage.png" alt="nuage" />
+                        <p>1°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">20:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>0°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">21:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-2°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">22:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-2°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">23:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-3°</p>
+                    </div>
+                    <div class="meteo5_container-content-detail">
+                        <p class="heure">00:00</p>
+                        <img src="./pics/lune.png" alt="lune" />
+                        <p>-4°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

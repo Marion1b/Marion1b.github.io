@@ -1,6 +1,36 @@
 .contact{
-    margin:0% 30% 0% 30%;
+    width: 45%;
+    margin: auto;
+    border: $color-third 1px solid ;
+    border-radius: 20px;
+    padding: 1.5rem;
     p{
         @include text;
+    }
+    .footer{
+        p{
+            @include text;
+        }
+        margin-top:30px;
+        .footer__reseaux{
+            display: flex;
+            img{
+                width: 25px;
+                height: 25px;
+                transition:transform 400ms;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            &--linkedin{
+                padding-left: 20px;
+            }
+        }
+        &__mail{
+            transition:transform 400ms;
+                &:hover{
+                    transform: scale(1.02);
+                }
+        }
     }
 }

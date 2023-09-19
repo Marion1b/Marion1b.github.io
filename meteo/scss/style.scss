@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+$background-color : #003844;
+$box-bg-color : #559bf158;
+$text-color : #FFEBC6;
+$white: rgba(255, 255, 255, 0.175);
+
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating2{
+    from{
+        transform: translate(0px, 10px);
+    }
+    50%{
+        transform: translate(0px, -10px);
+    }
+    to{
+        transform: translate(0px, 10px);
+    }
+}
+
+@keyframes grow{
+    from{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
+
+@mixin bloc-meteo{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    &_bg{
+        width: 45vw;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 10px 20px lighten($background-color,5);
+        background: linear-gradient(lighten($background-color,10), $background-color);
+    }
+    h2{
+        font-size : 2rem;
+        margin-bottom: 50px;
+    }
+    &_container-header{
+        margin-bottom:50px;
+        &-top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:25px;
+        }
+        h3{
+            font-weight: normal;
+            font-size: 2.5rem;
+            margin:0px 20px;
+        }
+        img{
+            width : 10vw;
+        }
+        &-infos{
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            p{
+                margin:15px;
+            }
+        }
+    }
+    &_container-content{
+        display: flex;
+        align-items: center;
+        width: 30vw;
+        overflow: scroll;
+        background-color: $white;
+        border-radius: 20px;
+        &-detail{
+            padding:5px;
+        }
+        .heure{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        p{
+            text-align: center;
+        }
+        img{
+            width:75px;
+        }
+    }
+}
+
+*{
+    margin:0;
+}
+
+body{
+    background-color: $background-color;
+    color:$text-color;
+    font-family: 'Noto Serif JP', serif;
+    width: 100vw;
+    height: 100vh;
+    a{
+        color:$text-color;
+        text-decoration: none;
+    }
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size:8rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    height: 80vh;
+    h1{
+        margin-bottom: 100px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+        padding: 0px;
+        width: 65vw;
+        margin-bottom:200px;
+        a{
+            margin: 2px 10px 2px 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background: linear-gradient(to left bottom, $box-bg-color, lighten($box-bg-color,20));
+            &:active{
+                transform: translate(0px, -10px);
+            }
+        }
+    }
+}
+.meteo{
+    @include bloc-meteo;
+    background: linear-gradient(#ffb703, darken(#fefae0,15));
+    &_container-header{
+        img{
+            animation: rotating 8s linear infinite;
+        }
+    }
+}
+
+.meteo2{
+    @include bloc-meteo;
+    background: linear-gradient($box-bg-color, darken(#e0f9fe,15));
+    &_container-header{
+        img{
+            animation: grow 5s linear infinite;
+        }
+    }
+}
+.meteo3{
+    @include bloc-meteo;
+    background: linear-gradient(darken($box-bg-color,15), $text-color);
+    &_container-header{
+        img{
+            animation: grow 5s linear infinite;
+        }
+    }
+}
+.meteo4{
+    @include bloc-meteo;
+    background: linear-gradient(lighten($box-bg-color,30), white);
+    &_container-header{
+        img{
+            animation: rotating2 5s linear infinite;
+        }
+    }
+}
+.meteo5{
+    @include bloc-meteo;
+    background: linear-gradient(grey, white);
+    &_container-header{
+        img{
+            animation: grow 5s linear infinite;
+        }
+    }
+}
