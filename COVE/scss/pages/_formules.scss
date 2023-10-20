@@ -1,0 +1,90 @@
+.reservation{
+    @media  screen and (max-height:900px){
+        margin-top:300px;
+        height: 410px;
+    }
+    @media screen and (min-height:901px){
+        margin-top: 35vh;
+        height: 55vh;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:500px){
+        button{
+            width: 300px;
+            height: 70px;
+            font-size: 36px;
+        }
+    }
+    @media screen and (min-width:501px){
+        button{
+            width: 500px;
+            height: 95px;
+            font-size: 56px;
+        }
+    }
+    button{
+        background-color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+        border: #000 3px solid;
+        cursor: pointer;
+        transition: all 400ms;
+        &:hover{
+            transform: translateX(10px);
+            box-shadow: -15px 8px 3px #000;
+        }
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+    .reservation-plus-container{
+        margin-bottom: 5rem;
+        a{
+            display: flex;
+            flex-direction: row ;
+            align-items: end;
+        }
+        .reservation-plus{
+            font-size: 24px;
+            font-family: 'Lato', sans-serif;
+            margin-right: 5px;
+            &:hover{
+                font-weight: 700;
+            }
+            @media screen and (max-width:500px){
+                font-size: 16px;
+            }
+        }
+        svg{
+            height: 30px;
+            animation: move 1s linear infinite;
+        }
+        @media screen and (max-width:500px){
+            svg{
+                height: 20px;
+            }
+        }
+    }
+}
+.formule-1{
+    @include formule($formule-1-bg);
+}
+.formule-2{
+    @include formule($formule-2-bg);
+    @media screen and (min-width:901px){
+        img{
+            order: 2;
+            margin-left: 0px;
+            margin-right: 75px;
+        }
+        &_article{
+            order: 1;
+            left: 75px;
+        }
+    }
+}
+.formule-3{
+    @include formule($formule-3-bg);
+}

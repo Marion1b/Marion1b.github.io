@@ -1,0 +1,56 @@
+*{
+    margin:0px
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+    overflow-x: hidden;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    @media screen and (max-width:900px){
+        font-size: 12px;
+    }   
+    @media screen and (min-width:901px){
+        font-size: 16px;
+    }   
+}
+li{
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+@media screen and (max-width:1400px){
+    h2{
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:1401px){
+    h2{
+        font-size: 36px;
+    }
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+}
+@media screen and (max-width:900px){
+    h3{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:901px){
+    h3{
+        font-size: 36px;
+    } 
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+}

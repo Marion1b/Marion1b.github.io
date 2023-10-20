@@ -1,0 +1,86 @@
+.home{
+    height: 100vh;
+    background-image: url(../pics/hot-air-balloons-4561267_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 5%;
+    overflow: hidden; //pour tout avoir sur la page sans avoir un truc en dessous du footer
+    
+}
+.header_home{
+    @media screen and (max-width:1000px) {
+        h1{
+            font-size:56px;
+            padding-top:15px;
+            padding-bottom: 15px;
+            border-top: solid 6px #000;
+            border-bottom: solid 6px #000;
+        }
+    }
+    @media screen and (min-width:1001px) {
+        h1{
+            font-size:72px;
+            padding-top:30px;
+            padding-bottom: 30px;
+            border-top: solid 8px #000;
+            border-bottom: solid 8px #000;
+        }
+    }   
+    h1{
+        margin-top:50px;
+        letter-spacing: 20px;
+        background-color: #fff;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        .laptop_home{
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @media screen and (max-width:500px){
+                visibility: collapse;
+            }
+            @media screen and (max-width:1000px) {
+                li{
+                    font-size:16px
+                }
+            }
+            @media screen and (min-width:1001px) {
+                li{
+                    font-size:24px
+                }
+            }
+            li{
+                background-color: $main-color;
+                height: fit-content;
+                background-color: #fff;
+                border: 3px solid #000;
+                width: fit-content;
+                padding: 10px;
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 400ms;
+                a{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 24px;
+                }
+                &:hover{
+                    transform: translateX(10px);
+                    box-shadow: -10px 5px 3px #000;
+                }
+                &:active{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,259 @@
+$main-color:rgb(117, 190, 234);
+$formule-1-bg :#F28444;
+$formule-2-bg: #BCBF69;
+$formule-3-bg: #4F3F69;
+
+@mixin form{
+    @media screen and (min-width:501px) and (max-width:1200px){
+        fieldset{
+            display: flex;
+            flex-direction: column;
+        }
+        textarea{
+            width: 250px;
+        }
+        .form-blank{
+            width: 5%;
+        }
+    }
+    @media screen and (min-width:1201px){
+        textarea{
+            width: 530px;
+        }
+        .form-blank{
+            width: 25%;
+        }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border: #000 3px solid;
+    margin-bottom:22vh;
+    input{
+        border: none;
+        outline: none;
+        width: 250px;
+        border-bottom: #000 solid 2px;
+        background:none;    
+        margin: 15px;
+        &:focus{
+            border-bottom: $main-color 5px solid;
+        }
+    }
+    select{
+        margin: 15px;
+        width: 250px;
+        background:transparent;
+        border:none;
+        border-bottom: #000 solid 2px;
+    }
+    option{
+        font-size: 16px;
+        font-family: 'lato', sans-serif;
+        color: #414141;
+        opacity: 1;
+    }
+    legend{
+        margin: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    fieldset{
+        border: none;
+    }
+    ::placeholder{
+        font-size: 16px;
+        font-family: 'lato', sans-serif;
+        color: #414141;
+        opacity: 1;
+    }
+    textarea{
+        height: 210px;
+        border: #000 2px solid;
+        outline: none;
+        margin: 15px;
+        font-family: 'Lato', sans-serif;
+        &:focus{
+            border: $main-color 5px solid;
+        }
+    }
+    .form-button-container{
+        display: flex;
+        flex-direction: row;
+    }
+    @media screen and (max-width:1200px){
+        .form-button{
+            font-size:24px;
+        }
+    }
+    @media screen and (min-width:1201px){
+        .form-button{
+            font-size:32px;
+        }
+    }
+    .form-button{
+        border: #000 3px solid;
+        padding: 5px 20px 5px 20px;
+        cursor: pointer;
+        transition: all 400ms;
+        &:hover{
+            transform: translateX(10px);
+            box-shadow: -10px 5px 3px $main-color;
+        }
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+    @media screen and (max-width:500px){
+        width: 360px;
+        margin-bottom:50px;
+        fieldset{
+            display: flex;
+            flex-direction: column;
+        }
+        .form-blank{
+            width: 5%;
+        }
+    }
+}
+
+//La mixin pour les 3 formules différentes de la page formules
+
+@mixin formule($color){
+    overflow: hidden; //Pour éviter d'avoir un bug avec la position de l'article en vertical.
+    background-color: $color;
+    @media  screen and (max-height:900px){
+        height: 800px;
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    @media  screen and (min-height:901px){
+        height: 100vh;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    @media screen and (max-width:900px){
+        flex-direction: column;
+        img{
+            width:340px;
+            margin-top:150px;
+        }
+    }
+    @media screen and (min-width:901px){
+        flex-direction: row;
+        img{
+            width:523px;
+            margin-left: 75px;
+        }
+    }
+    &_article{
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:900px){
+            border: 2px #000 solid;
+            position: relative;
+            top:-150px;
+            width: 275px;
+            h3{
+                border-bottom: $color 3px solid;
+                width: fit-content;
+                margin-bottom: 25px;
+            }
+            p{
+                margin-bottom:20px;
+            }
+            ul{
+                margin-bottom: 20px;
+            }
+        }
+        @media screen and (min-width:901px){
+            border: 2px #000 solid;
+            position: relative;
+            left:-75px;
+            width: 35vw;
+            h3{
+                border-bottom: $color 3px solid;
+                width: fit-content;
+                margin-bottom: 50px;
+            }
+            p{
+                margin-bottom:35px;
+            }
+            ul{
+                margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width:900px){
+            li{
+                font-size:12px;
+            }
+        }
+        @media screen and (min-width:901px){
+            li{
+                font-size:16px;
+            }
+        }
+        @media screen and (max-width:900px){
+            .prix{
+                font-size:16px;
+            }
+        }
+        @media screen and (min-width:901px){
+            .prix{
+                font-size:24px;
+            }
+        }
+        .prix{
+            padding: 5px 5px 5px 20px;
+            border-left: $color 3px solid;
+        }
+        @media screen and (max-width:900px){
+            button{
+                font-size: 24px;
+            }
+        }
+        @media screen and (min-width:901px){
+            button{
+                font-size: 32px;
+            }
+        }
+        button{
+            font-family: 'Lato', sans-serif;
+            background-color: #fff;
+            border: $color 3px solid;
+            cursor: pointer;
+            padding:5px 80px 5px 80px;
+            transition: all 400ms;
+            &:hover{
+                border: #000 3px solid;
+                transform: translateX(10px);
+                box-shadow: -10px 5px 3px $color;
+            }
+            &:active{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+@keyframes move{
+    from{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}

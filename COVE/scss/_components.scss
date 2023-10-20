@@ -1,0 +1,27 @@
+.title{
+    margin-top:20vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    @media screen and (max-width:1400px){
+        h2{
+            padding:5px 10px 5px 10px;
+        }
+    }
+    @media screen and (min-width:1401px){
+        h2{
+            padding:10px 15px 10px 15px;
+        }
+    }
+    h2{
+        height: fit-content;
+        width: fit-content;
+        background-color: #fff;
+        border: #000 solid 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,83 @@
+//Pour le title j'ai repris le même nom de class que pour le title formulaire
+
+.equipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    width: 60vw;
+    margin: auto;
+    padding:50px;
+    background-color: #fff;
+    border: #000 3px solid;
+    margin-bottom:22vh;
+    @media screen and (max-width:500px){
+        width: 330px;
+        padding: 15px;
+        margin-bottom:50px;
+    }
+    &-container{
+        width: 500px;
+        @media screen and (max-width:900px){
+            margin-bottom: 50px;
+            svg{
+                width:150px;
+            }
+        }
+        @media screen and (min-width:901px) and (max-width:1666px){
+            margin-bottom: 50px;
+            svg{
+                width: 300px;
+            }
+        }
+        @media screen and (min-width:1667px){
+            svg{
+                width: 500px;
+            }
+        }
+        svg{
+            align-self: center;
+            margin-right: 50px;
+        }
+        @media screen and (max-width:500px){
+            svg{
+                margin-right: 15px;
+            }
+        }
+    }
+    .equipe_employé-l {
+        display: flex;
+        @media screen and (max-width:1666px){
+            margin-top:50px;
+        }
+        @media screen and (min-width:1667px){
+            margin-top:100px;
+            margin-bottom: 100px;
+            margin-right: 50px;
+        }
+    }
+    .equipe_employé-r{
+        display: flex;
+        @media screen and (max-width:1666px){
+            margin-bottom: 50px;
+        }
+        @media screen and (min-width:1667px){
+            margin-top:100px;
+            margin-bottom: 100px;
+        }
+    }
+    .equipe_employé-prenom-poste{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
+        p{
+            margin-right: 20px;
+        }
+    }
+    .prénom{
+        font-size: 24px;
+        @media screen and (max-width:500px) {
+            font-size: 16px;
+        }
+    }
+}
