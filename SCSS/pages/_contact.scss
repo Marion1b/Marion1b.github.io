@@ -4,6 +4,9 @@
     border: $color-third 1px solid ;
     border-radius: 20px;
     padding: 1.5rem;
+    @media screen and (max-width:700px){
+        width: 300px;
+    }
     p{
         @include text;
     }
