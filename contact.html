@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="UTF-8" />
-			<link rel="stylesheet" href="./CSS/Style.css"/>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-			<title>Portfolio Marion Barthoux</title>
-		</head>
-		<body>
-            <header>
-                <h1><a href="index.html" alt="Lien vers la page d'accueil">Portfolio <br>
-                Marion <br>
-                Barthoux</a></h1>
-                <nav>
-                    <ul class="nav-desktop">
-                        <li><a href="index.html" alt="Lien vers la page d'accueil">Accueil</a></li>
-                        <li><a href="a_propos.html" alt="Lien vers la page à propos">À propos</a></li>
-                        <li><a href="CV.html" alt="Lien vers la page CV">CV</a></li>
-                        <li><a href="Sites.html" alt="Lien vers la page sites web">Projets</a></li>
-                        <li><a href="contact.html" alt="Lien vers la page de contatc" class="header_active">Contact</a></li>
-                    </ul>
-                    <ul class="nav-phone">
-                        <li><a href="index.html" alt="lien vers la page d'accueil" ><svg fill="#7b2cbf" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#7b2cbf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="home"> <path d="M29.71,15.29l-3-3h0l-10-10a1,1,0,0,0-1.42,0l-10,10h0l-3,3a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L5,15.41V29a1,1,0,0,0,1,1H26a1,1,0,0,0,1-1V15.41l1.29,1.3a1,1,0,0,0,1.42,0A1,1,0,0,0,29.71,15.29ZM25,28H7V13.41l9-9,9,9Z"></path> </g> </g></svg></a></li>
-                        <li><a href="a_propos.html" alt="lien vers la page à propos"><svg fill="#7b2cbf" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#7b2cbf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="about"> <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z"></path> <path d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z"></path> </g> </g></svg></a></li>
-                        <li><a href="CV.html" alt="lien vers la page CV"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#7b2cbf" stroke="#7b2cbf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#7b2cbf;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style> </defs> <title></title> <g id="document"> <polyline class="cls-1" points="25 9 25 29 7 29 7 3 16 3"></polyline> <line class="cls-1" x1="16" x2="25" y1="3" y2="9"></line> <line class="cls-1" x1="16" x2="16" y1="3" y2="9"></line> <line class="cls-1" x1="25" x2="16" y1="9" y2="9"></line> <line class="cls-1" x1="11" x2="16" y1="17" y2="17"></line> <line class="cls-1" x1="11" x2="20" y1="21" y2="21"></line> </g> </g></svg></a></li>
-                        <li><a href="Sites.html" alt="lien vers la page des projets"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#7b2cbf" stroke="#7b2cbf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#7b2cbf;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style> </defs> <title></title> <g id="folder"> <polygon class="cls-1" points="25 12 25 7 3 7 3 25 25 25 29 12 25 12"></polygon> <polygon class="cls-1" points="25 25 3 25 7 12 29 12 25 25"></polygon> </g> </g></svg></a></li>
-                        <li><a href="contact.html" alt="lien vers la page de contact" class="phone-active"  ><svg fill="#7b2cbf" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#7b2cbf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="mail"> <path d="M29,6H3L2.92,6a.78.78,0,0,0-.21,0l-.17.07a.65.65,0,0,0-.15.1.67.67,0,0,0-.15.14l-.06.06a.36.36,0,0,0,0,.09,1.08,1.08,0,0,0-.08.19A1.29,1.29,0,0,0,2,6.9S2,7,2,7V25a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V7A1,1,0,0,0,29,6ZM16,14.81,6.2,8H27.09ZM4,24V8.91l11.43,7.91,0,0a1.51,1.51,0,0,0,.18.09l.08,0A1.09,1.09,0,0,0,16,17h0a1,1,0,0,0,.41-.1l.07,0,0,0L28,9.79V24Z"></path> </g> </g></svg></a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="contact">
-                <p>Vous pouvez me contacter de préférence par <span class="bold">mail</span> :</p>
-                <div class="footer__mail"><a href="mailto:marion.barthoux@gmail.com" alt="envoyer un mail à Marion Barthoux"><p>marion.barthoux@gmail.com</p></a></div><br>
-                <p>Ou par téléphone :<br><br>
-                    06.51.55.39.83</p><br>
-                <div class="footer">
-                    <p>Mes réseaux : </p>
-                    <div class="footer__reseaux">
-                        <div class="footer__reseaux--git">
-                            <a href="https://github.com/Marion1b" alt="lien ver la page git de Marion Barthoux" title="Github"><img src="./Picto/github.png" alt="logo git lien vers la page git de Marion Barthoux"></a>
-                        </div>
-                        <div class="footer__reseaux--linkedin">
-                            <a href="https://www.linkedin.com/in/marion-barthoux-38a1b8215/" alt="lien vers la page linkedin de Marion Barthoux" title="Linkedin"><img src="./Picto/linkedin.png" alt="logo linkedin lien vers la page linkedin de Marion Barthoux"></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <div class="footer__mail"><a href="mailto:marion.barthoux@gmail.com" alt="envoyer un mail à Marion Barthoux">marion.barthoux@gmail.com</a></div>
-                <div class="footer__reseaux"><div class="footer__reseaux--git"><a href="https://github.com/Marion1b" alt="lien ver la page git de Marion Barthoux" title="Github"><img src="./Picto/github.png" alt="logo git lien vers la page git de Marion Barthoux"></a></div>
-                <div class="footer__reseaux--linkedin"><a href="https://www.linkedin.com/in/marion-barthoux-38a1b8215/" alt="lien vers la page linkedin de Marion Barthoux" title="Linkedin"><img src="./Picto/linkedin.png" alt="logo linkedin lien vers la page linkedin de Marion Barthoux"></a></div></div>
-            </footer>
-        </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio Marion Barthoux - A propos</title>
+</head>
+<body>
+    <header>
+        <div class="burger">
+            <span class="burger-stick"></span>
+            <span class="burger-stick"></span>
+            <span class="burger-stick"></span>
+        </div>
+        <nav>
+            <ul class="header-nav">
+                <a href="./index.html"><li>Accueil</li></a>
+                <a href="./about.html"><li>A propos</li></a>
+                <a href="./projets.html"><li>Projets</li></a>
+                <a href="./contact.html"><li class="active">Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <section class="contact-text">
+            <p>Vous pouvez me contacter de préférence par mail :<br>
+                marion.barthoux@gmail.com<br>
+                Ou par téléphone au :<br>
+                06.51.55.39.83<br>
+                Mes réseaux : </p>
+        </section>
+        <section class="contact__reseaux">
+            <a href="https://github.com/Marion1b" target="_blank"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5808 20.2773 21.0498 21.7438 19.0074C23.2103 16.9651 23.9994 14.5143 24 12C24 5.37 18.63 0 12 0Z" fill="#000000"></path> </g></svg></li></a>
+            <a href="https://www.linkedin.com/in/marion-barthoux-38a1b8215/" target="_blank"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.83783C1 2.35041 1.19363 1.88295 1.53829 1.53829C1.88295 1.19363 2.35041 1 2.83783 1H21.1611C21.4025 1 21.6415 1.04754 21.8644 1.1399C22.0874 1.23226 22.29 1.36763 22.4607 1.53829C22.6313 1.70895 22.7667 1.91155 22.8591 2.13452C22.9514 2.3575 22.999 2.59648 22.999 2.83783V21.1611C22.999 21.4025 22.9514 21.6415 22.8591 21.8644C22.7667 22.0874 22.6313 22.29 22.4607 22.4607C22.29 22.6313 22.0874 22.7667 21.8644 22.8591C21.6415 22.9514 21.4025 22.999 21.1611 22.999H2.83783C2.35041 22.999 1.88295 22.8053 1.53829 22.4607C1.19363 22.116 1 21.6486 1 21.1611V2.83783ZM9.70792 9.38711H12.687V10.884C13.1164 10.0232 14.2168 9.24961 15.8699 9.24961C19.0387 9.24961 19.7908 10.9628 19.7908 14.1063V19.9283H16.5826V14.8222C16.5826 13.0321 16.1532 12.0224 15.061 12.0224C13.5463 12.0224 12.9161 13.1109 12.9161 14.8222V19.9283H9.70792V9.38711ZM4.20818 19.7908H7.41637V9.24961H4.20818V19.7908ZM7.87468 5.81227C7.87468 6.08311 7.82133 6.3513 7.71769 6.60152C7.61404 6.85174 7.46212 7.0791 7.27061 7.27061C7.0791 7.46212 6.85174 7.61404 6.60152 7.71769C6.3513 7.82133 6.08311 7.87468 5.81227 7.87468C5.54144 7.87468 5.27325 7.82133 5.02303 7.71769C4.7728 7.61404 4.54545 7.46212 4.35393 7.27061C4.16242 7.0791 4.01051 6.85174 3.90686 6.60152C3.80322 6.3513 3.74987 6.08311 3.74987 5.81227C3.74987 5.26529 3.96716 4.74071 4.35393 4.35393C4.74071 3.96716 5.26529 3.74987 5.81227 3.74987C6.35926 3.74987 6.88384 3.96716 7.27061 4.35393C7.65739 4.74071 7.87468 5.26529 7.87468 5.81227Z" fill="#000000"></path> </g></svg></li></a>
+        </section>
+        </main>
+
+    <footer class="footer__home">
+        <ul class="footer-nav">
+            <a href="mentions-legales.html"><li>Mentions légales</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="https://github.com/Marion1b" target="_blank"><li><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5808 20.2773 21.0498 21.7438 19.0074C23.2103 16.9651 23.9994 14.5143 24 12C24 5.37 18.63 0 12 0Z" fill="#000000"></path> </g></svg></li></a>
+            <a href="https://www.linkedin.com/in/marion-barthoux-38a1b8215/" target="_blank"><li><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.83783C1 2.35041 1.19363 1.88295 1.53829 1.53829C1.88295 1.19363 2.35041 1 2.83783 1H21.1611C21.4025 1 21.6415 1.04754 21.8644 1.1399C22.0874 1.23226 22.29 1.36763 22.4607 1.53829C22.6313 1.70895 22.7667 1.91155 22.8591 2.13452C22.9514 2.3575 22.999 2.59648 22.999 2.83783V21.1611C22.999 21.4025 22.9514 21.6415 22.8591 21.8644C22.7667 22.0874 22.6313 22.29 22.4607 22.4607C22.29 22.6313 22.0874 22.7667 21.8644 22.8591C21.6415 22.9514 21.4025 22.999 21.1611 22.999H2.83783C2.35041 22.999 1.88295 22.8053 1.53829 22.4607C1.19363 22.116 1 21.6486 1 21.1611V2.83783ZM9.70792 9.38711H12.687V10.884C13.1164 10.0232 14.2168 9.24961 15.8699 9.24961C19.0387 9.24961 19.7908 10.9628 19.7908 14.1063V19.9283H16.5826V14.8222C16.5826 13.0321 16.1532 12.0224 15.061 12.0224C13.5463 12.0224 12.9161 13.1109 12.9161 14.8222V19.9283H9.70792V9.38711ZM4.20818 19.7908H7.41637V9.24961H4.20818V19.7908ZM7.87468 5.81227C7.87468 6.08311 7.82133 6.3513 7.71769 6.60152C7.61404 6.85174 7.46212 7.0791 7.27061 7.27061C7.0791 7.46212 6.85174 7.61404 6.60152 7.71769C6.3513 7.82133 6.08311 7.87468 5.81227 7.87468C5.54144 7.87468 5.27325 7.82133 5.02303 7.71769C4.7728 7.61404 4.54545 7.46212 4.35393 7.27061C4.16242 7.0791 4.01051 6.85174 3.90686 6.60152C3.80322 6.3513 3.74987 6.08311 3.74987 5.81227C3.74987 5.26529 3.96716 4.74071 4.35393 4.35393C4.74071 3.96716 5.26529 3.74987 5.81227 3.74987C6.35926 3.74987 6.88384 3.96716 7.27061 4.35393C7.65739 4.74071 7.87468 5.26529 7.87468 5.81227Z" fill="#000000"></path> </g></svg></li></a>
+        </ul>
+    </footer>
+    <script src="./script/home/app.js"></script>
+</body>
+</html>
