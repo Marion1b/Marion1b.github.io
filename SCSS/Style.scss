@@ -7,6 +7,7 @@ $pink-project : #FE00A5;
 $blue-project : #75BEEA;
 $orange-project : #FCA311;
 $brown-project : #8C230B;
+$yellow-project : #FCFE89;
 
 @keyframes jump{
     from{
@@ -503,6 +504,12 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .dm__container{
+        &-image{
+            background-image:url(../pictures/dm.png);
+        }
+        @include sites($yellow-project);
     }
     .cove__container{
         &-image{
