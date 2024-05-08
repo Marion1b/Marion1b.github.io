@@ -504,6 +504,12 @@ header{
         justify-content: center;
         align-items: center;
     }
+    .weather__container{
+        &-image{
+            background-image:url(../Pictures/weather.png)
+        }
+        @include sites(#ccd3d9)
+    }
     .dm__container{
         &-image{
             background-image:url(../Pictures/dm.png);

@@ -372,6 +372,101 @@ header li:hover {
     align-items: center;
   }
 }
+.projets .weather__container {
+  border: #0C0A0B 5px solid;
+  max-width: 900px;
+  margin-top: 15rem;
+  box-shadow: -8px 10px 4px #ccd3d9;
+  /*****Tablet version*****/
+}
+.projets .weather__container-image {
+  background-image: url(../Pictures/weather.png);
+}
+.projets .weather__container:hover {
+  transform: translate(5px, -5px);
+  border: 6px solid #0C0A0B;
+  box-shadow: -12px 16px 4px #ccd3d9;
+}
+.projets .weather__container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.projets .weather__container-header-items {
+  display: flex;
+  gap: 2rem;
+}
+.projets .weather__container-header-items svg {
+  width: 20px;
+}
+.projets .weather__container-image {
+  height: 450px;
+  border-top: 5px #0C0A0B solid;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+.projets .weather__container-image-info {
+  order: 2;
+  align-self: flex-end;
+  position: absolute;
+  z-index: 6;
+  font-family: "Jost" sans-serif;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #0C0A0B;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #fff;
+  border: 3px solid #0C0A0B;
+  border-radius: 50%;
+  animation: jump 1s linear infinite;
+}
+.projets .weather__container-image-info:hover + .description {
+  opacity: 1;
+}
+.projets .weather__container-image .description {
+  margin: auto;
+  order: 1;
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+  padding: 2rem;
+  font-family: "Jost" sans-serif;
+  font-size: 2.4rem;
+  color: #0C0A0B;
+  border: #0C0A0B 0.5rem solid;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.6117647059);
+  transition: all 400ms;
+}
+.projets .weather__container .description-tablet {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .projets .weather__container-image-info {
+    display: none;
+  }
+  .projets .weather__container .description {
+    display: none;
+  }
+  .projets .weather__container .description-tablet {
+    display: block;
+    padding: 1rem;
+  }
+}
 .projets .dm__container {
   border: #0C0A0B 5px solid;
   max-width: 900px;
