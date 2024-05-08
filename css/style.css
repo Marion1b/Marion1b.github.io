@@ -380,7 +380,7 @@ header li:hover {
   /*****Tablet version*****/
 }
 .projets .dm__container-image {
-  background-image: url(../pictures/dm.png);
+  background-image: url(../Pictures/dm.png);
 }
 .projets .dm__container:hover {
   transform: translate(5px, -5px);

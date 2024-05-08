@@ -507,7 +507,7 @@ header{
     }
     .dm__container{
         &-image{
-            background-image:url(../pictures/dm.png);
+            background-image:url(../Pictures/dm.png);
         }
         @include sites($yellow-project);
     }
