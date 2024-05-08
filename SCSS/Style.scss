@@ -522,18 +522,6 @@ header{
         }
         @include sites($blue-project);
     }
-    .cyberpink__container{
-        &-image{
-            background:url(../pictures/Cyber_Pïnk.png);
-        }
-        @include sites($pink-project);
-    }
-    .meteo__container{
-        &-image{
-            background:url(../pictures/meteo.png);
-        }
-        @include sites($yellow-project);
-    }
     .solaire__container{
         &-image{
             background:url(../pictures/solaire.png);
@@ -573,6 +561,18 @@ header{
     }
     svg{
         width: 75px;
+        padding:.5rem;
+        margin-top: 1rem;
+        transition: all 200ms;
+        gap:1rem;
+        &:hover{
+            transform: translate(3px, -3px);
+            border:$font-color 5px solid;
+            box-shadow: -4px 6px $shadow-box-color;
+        }
+    }
+    img{
+        width: 120px;
         padding:.5rem;
         margin-top: 1rem;
         transition: all 200ms;
