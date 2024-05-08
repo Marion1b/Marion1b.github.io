@@ -95,9 +95,8 @@ $yellow-project : #FCFE89;
             font-size:2.4rem;
             color: $font-color;
             border: $font-color .5rem solid;
-            box-shadow: 0rem 11rem 0rem 10rem #fff,
-                       0rem -11rem 0rem 10rem #fff;
-            background-color: #fff;
+            backdrop-filter: blur(20px);
+            background-color: #ffffff9c;
             transition: all 400ms;
         }
     }
