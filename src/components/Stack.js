@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from './Button';
+import CV from '../assets/images/CV.pdf';
 
 function Stack(){
     const [data, setData] = useState(null);
@@ -28,7 +29,7 @@ function Stack(){
     if(error)return <p>Erreur : {error.message}</p>;
 
     return(
-        <section className='stack'>
+        <section className='stack' id="stack">
             <h2>Stack</h2>
             <article className='stack-block'>
             <p className='bold'>Bonne maîtrise</p>
@@ -81,7 +82,7 @@ function Stack(){
                     })}
                 </div>
             </article>
-            <Button texte="Télécharger mon CV" />
+            <a href={CV} target="_blank" rel="noreferrer"><Button texte="Télécharger mon CV" /></a>
         </section>
     )
 }

@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Home from './components/Home';
 import Stack from './components/Stack';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <h1 hidden>Portfolio Marion Barthoux</h1>
         <Home />
         <Stack />
+        <Projects />
       </main>
     </div>
   );

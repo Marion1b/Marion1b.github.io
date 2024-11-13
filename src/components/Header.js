@@ -3,8 +3,8 @@ function Header() {
         <header>
             <nav>
                 <ul>
-                    <li>Stack</li>
-                    <li>Projets</li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#projects">Projets</a></li>
                     <li>Contact</li>
                 </ul>
             </nav>
