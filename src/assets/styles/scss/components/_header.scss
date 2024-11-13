@@ -1,0 +1,25 @@
+@use "../_var.scss" as var;
+@use "../_mixins.scss" as mix;
+
+header{
+    nav{
+        @include mix.nav("no");
+        background-color: rgba(0,129,112,0.3);
+        backdrop-filter: blur(50px);
+        color: var.$white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                padding: 1rem;
+                margin: 2rem 3rem;
+            }
+        }
+    }
+}

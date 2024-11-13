@@ -1,0 +1,56 @@
+{
+    "donkey":{
+        "name":"Donkey",
+        "minia":"/projects-minia/donkey.png",
+        "descr":"Projet de fin de formation pour la 3W Academy. J'ai créé le site d'un festival de musique fictif nommé Donkey",
+        "stack":[
+            "html",
+            "css",
+            "sass",
+            "js",
+            "php",
+            "twig",
+            "mysql"
+        ]
+    },
+    "weather":{
+        "name":"Weather",
+        "minia":"/projects-minia/weather.png",
+        "descr":"Pour m'entraîner à manipuler les API j'ai fait un petit projet qui permet de voir la météo de Rennes en temps réel",
+        "stack":[
+            "html",
+            "css",
+            "js"
+        ]
+    },
+    "dunder-muffin":{
+        "name":"Dunder Muffin",
+        "minia":"/projects-minia/dm.png",
+        "descr":"Un projet en duo. Je me suis occupée principalement de la partie css et des animations.",
+        "stack":[
+            "html",
+            "css",
+            "js"
+        ]
+    },
+    "cove":{
+        "name":"COVE",
+        "minia":"/projects-minia/cove.png",
+        "descr":"J'ai créé un site de réservation de vol en Montgolfière complétement responsive, à partir d'un brief qui provient du site goodbried.",
+        "stack":[
+            "html",
+            "css",
+            "sass"
+        ]
+    },
+    "yummy-nouilles":{
+        "name":"Yummy nouilles",
+        "minia":"/projects-minia/yummy_nouilles.png",
+        "descr":"Dans le cadre du cours pour apprendre à utiliser figma, j'ai réalisé une maquette pour une chaîne de restaurant fictive : Yummy noodle. J'ai ensuite souhaité m'entraîner en codant la maquette que j'avais réalisé sur figma.",
+        "stack":[
+            "html",
+            "css",
+            "sass"
+        ]
+    }
+}

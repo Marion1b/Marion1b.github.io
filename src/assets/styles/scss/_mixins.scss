@@ -1,0 +1,87 @@
+@mixin title1($device){
+    font-weight: 800;
+    @if $device == "mobile"{
+        font-size: 2rem;
+    }@else{
+        font-size: 2.4rem;
+    }
+}
+
+@mixin title2($device){
+    font-weight: 800;
+    @if $device == "mobile"{
+        font-size: 2rem;
+    }@else{
+        font-size: 2.4rem;
+    }
+}
+
+@mixin title3($device){
+    font-weight: 600;
+    @if $device == "mobile"{
+        font-size: 1.4rem;
+    }@else{
+        font-size: 1.6rem;
+    }
+}
+
+@mixin text($device){
+    font-weight: 400;
+    @if $device == "mobile"{
+        font-size: 1.2rem;
+    }@else{
+        font-size: 1.6rem;
+    }
+}
+
+@mixin nav($device){
+    font-weight: 600;
+    font-style: italic;
+    @if $device == "mobile"{
+        font-size: 1.4rem;
+    }@else{
+        font-size: 1.6rem;
+    }
+}
+
+@mixin big($device){
+    font-weight: 400;
+    @if $device == "mobile"{
+        font-size: 1.6rem;
+    }@else{
+        font-size: 2.4rem;
+    }
+}
+
+@mixin bold($device){
+    font-weight: 600;
+    @if $device == "mobile"{
+        font-size: 1.4rem;
+    }@else{
+        font-size: 1.6rem;
+    }
+}
+
+@mixin button($device){
+    font-weight: 600;
+    font-style: italic;
+    @if $device == "mobile"{
+        font-size: 1.4rem;
+    }@else{
+        font-size: 1.6rem;
+    }
+}
+
+@mixin titleProjects($device){
+    font-weight: 800;
+    @if $device == "mobile"{
+        font-size: 3.2rem;
+    }@else{
+        font-size: 4rem;
+    }
+}
+
+@mixin sectionPadding(){
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}

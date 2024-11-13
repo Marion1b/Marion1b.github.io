@@ -1,0 +1,28 @@
+@use "../_var.scss" as var;
+@use "../_mixins.scss" as mix;
+
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    gap: 30px;
+    background: linear-gradient(var.$light, var.$medium);
+    img{
+        width: 420px;
+        border-radius: 15px;
+    }
+    p{
+        width: 420px;
+        color: var.$white;
+        @include mix.big("no");
+        strong{
+            text-shadow: 5px 5px 15px var.$dark,
+                        -5px -5px 15px var.$dark,
+                        -5px 5px 15px var.$dark,
+                        5px -5px 15px var.$dark,
+        }
+    }
+}
