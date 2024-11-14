@@ -1,0 +1,17 @@
+@use "../_var.scss" as var;
+@use "../_mixins.scss" as mix;
+
+footer{
+    background-color: var.$black;
+    color: var.$white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    border-top: 1px solid var.$white;
+    .mentions-link{
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

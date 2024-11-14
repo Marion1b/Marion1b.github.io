@@ -1,0 +1,39 @@
+@use "../_var.scss" as var;
+@use "../_mixins.scss" as mix;
+
+.mentions-legales{
+    position: fixed;
+    left: 50%;
+    max-width: 800px;
+    background-color: rgba($color: var.$medium, $alpha: 0.8);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    h2{
+        @include mix.title2('no');
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .bold{
+        @include mix.bold('no');
+        margin: 10px 0 5px 0;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        color: var.$white;
+    }
+}
+
+.mentions-legales-false{
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 400ms ease-out;
+}
+    
+.mentions-legales-true{
+    top: -100%;
+    transform: translate(-50%, -50%);
+    transition: all 400ms ease-in;
+}

@@ -24,6 +24,9 @@ header{
             @include mix.nav("no");
             color: var.$white;
             text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

@@ -1,0 +1,46 @@
+@use "../_var.scss" as var;
+@use "../_mixins.scss" as mix;
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mix.sectionPadding();
+    background: var.$black;
+    color: var.$white;
+    text-align: center;
+    h2{
+        @include mix.title2("no");
+        margin-bottom: 20px;
+    }
+    a{
+        color: var.$white;
+        text-decoration: none;
+        transition: all 200ms ease-in;
+        &:hover{
+            color: var.$light;
+        }
+    }
+    .bold{
+        @include mix.bold('no');
+        margin-bottom: 10px;
+    }
+    &-container{
+        margin: 30px 0;
+    }
+    img{
+        width: 50px;
+        border-radius: 5px;
+    }
+    &-links-container{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 50px;
+        text-align: center;
+        article{
+            width: 50px;
+        }
+    }
+}
