@@ -1,5 +1,6 @@
 @use "../_var.scss" as var;
 @use "../_mixins.scss" as mix;
+@use "../_animations.scss";
 
 .home{
     width: 100vw;
@@ -10,7 +11,6 @@
     padding-bottom: 10rem;
     gap: 30px;
     background: linear-gradient(var.$light, var.$medium);
-    text-align: center;
     img{
         width: 420px;
     }
@@ -18,12 +18,45 @@
         width: 420px;
         color: var.$white;
         @include mix.big("no");
-        strong{
-            text-shadow: 5px 5px 15px var.$dark,
-                        -5px -5px 15px var.$dark,
-                        -5px 5px 15px var.$dark,
-                        5px -5px 15px var.$dark,
-        }
+    }
+    &-key{
+        display: inline-block;
+    }
+    &-key:nth-child(1){
+        animation: pressDown1 2s ease-in-out infinite;
+    }
+    &-key:nth-child(4){
+        animation: pressDown5 1.5s ease-in-out infinite;
+    }
+    &-key:nth-child(6){
+        animation: pressDown2 2s ease-in-out infinite;
+    }
+    &-key:nth-child(8){
+        animation: pressDown6 4s ease-in-out infinite;
+    }
+    &-key:nth-child(10){
+        animation: pressDown3 3s ease-in-out infinite;
+    }
+    &-key:nth-child(13){
+        animation: pressDown7 2s ease-in-out infinite;
+    }
+    &-key:nth-child(15){
+        animation: pressDown4 3s ease-in-out infinite;
+    }
+    &-key:nth-child(17){
+        animation: pressDown8 3s ease-in-out infinite;
+    }
+    &-key:nth-child(20){
+        animation: pressDown1 4s ease-in-out infinite;
+    }
+    &-key:nth-child(21){
+        animation: pressDown5 3s ease-in-out infinite;
+    }
+    &-key:nth-child(23){
+        animation: pressDown2 2s ease-in-out infinite;
+    }
+    &-key:nth-child(24){
+        animation: pressDown6 4s ease-in-out infinite;
     }
     @media screen and (max-width:768px){
         flex-direction: column;
