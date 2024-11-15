@@ -24,6 +24,10 @@ function MentionsModal({hide}){
                     <li>Par email : <a href="mailto:marion.barthoux@gmail.com">marion.barthoux@gmail.com</a></li>
                     <li>Par courrier : 35000 Rennes</li>
                 </ul>
+            
+            <p className="bold">Crédit illustration</p>
+
+            <p>Illustration by <a href="https://icons8.com/illustrations/author/ARh4OKrFtdfC">Pixeltrue Ouch!</a></p>
 
             <p>Génération des mentions légales par Legalstart.</p>
         </section>
