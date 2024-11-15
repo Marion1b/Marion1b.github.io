@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include mix.sectionPadding();
+    @include mix.sectionPadding("no");
     background: linear-gradient(var.$dark, var.$black);
     color: var.$white;
     h2{
@@ -61,6 +61,27 @@
             transform: scaleY(0);
             transition: max-height 400ms ease-in,
                         transform 800ms ease-out;
+        }
+    }
+    @media screen and (max-width:768px){
+        @include mix.sectionPadding("mobile");
+        h2{
+            @include mix.title2("mobile");
+            margin-bottom: 25px;
+        }
+        .titleProjects{
+            @include mix.titleProjects('mobile');
+        }
+        &-project{
+            width: 100vw;
+            &-minia{
+                width: 275px;
+            }
+            &-stack{
+                img{
+                    width: 25px;
+                }
+            }
         }
     }
 }

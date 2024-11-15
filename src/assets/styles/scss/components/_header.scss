@@ -2,16 +2,16 @@
 @use "../_mixins.scss" as mix;
 
 header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,129,112,0.3);
+    backdrop-filter: blur(50px);
     nav{
-        background-color: rgba(0,129,112,0.3);
-        backdrop-filter: blur(50px);
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         ul{
             list-style: none;
             display: flex;
@@ -26,6 +26,16 @@ header{
             text-decoration: none;
             &:hover{
                 text-decoration: underline;
+            }
+        }
+        @media screen and (max-width:768px){
+            ul{
+                li{
+                    margin: 1rem 1.5rem;
+                }
+            }
+            a{
+                @include mix.nav('mobile');
             }
         }
     }

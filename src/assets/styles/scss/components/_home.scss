@@ -2,7 +2,7 @@
 @use "../_mixins.scss" as mix;
 
 .home{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,9 @@
     padding-bottom: 10rem;
     gap: 30px;
     background: linear-gradient(var.$light, var.$medium);
+    text-align: center;
     img{
         width: 420px;
-        border-radius: 15px;
     }
     p{
         width: 420px;
@@ -23,6 +23,15 @@
                         -5px -5px 15px var.$dark,
                         -5px 5px 15px var.$dark,
                         5px -5px 15px var.$dark,
+        }
+    }
+    @media screen and (max-width:768px){
+        flex-direction: column;
+        img{
+            width: 200px;
+        }
+        p{
+            @include mix.big("mobile");
         }
     }
 }

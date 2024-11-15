@@ -81,7 +81,11 @@
     }
 }
 
-@mixin sectionPadding(){
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+@mixin sectionPadding($device){
+    @if $device == "mobile"{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    }@else{
+        padding:10rem 1rem;
+    }
 }

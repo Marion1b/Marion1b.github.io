@@ -1,3 +1,5 @@
+@use "./_mixins.scss" as mix;
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,4 +14,10 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Jost", sans-serif;
+    p, a, li{
+        @include mix.text('no');
+        @media screen and (max-width:768px){
+            @include mix.text('mobile');
+        }
+    }
 }

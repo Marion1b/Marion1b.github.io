@@ -2,7 +2,7 @@
 @use "../_mixins.scss" as mix;
 
 .stack{
-    @include mix.sectionPadding();
+    @include mix.sectionPadding("no");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +27,26 @@
         margin: 20px 0;
         img{
             width: 50px;
+        }
+    }
+    @media screen and (max-width:768px){
+        @include mix.sectionPadding('mobile');
+        .bold{
+            @include mix.bold("mobile");
+        }
+        h2{
+            @include mix.title2("mobile");
+            margin-bottom: 25px;
+        }
+        .stack-block{
+            margin: 15px 0;
+        }
+        .stack-container{
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                width: 25px;
+            }
         }
     }
 }
