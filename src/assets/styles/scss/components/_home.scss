@@ -65,6 +65,7 @@
         }
         p{
             @include mix.big("mobile");
+            text-align: center;
         }
     }
 }
